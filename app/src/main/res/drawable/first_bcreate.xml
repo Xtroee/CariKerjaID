@@ -1,0 +1,22 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <!-- Warna saat tombol ditekan -->
+        <shape android:shape="rectangle">
+            <solid android:color="#525252" /> <!-- Warna oranye -->
+            <corners android:radius="5dp" /> <!-- Sudut melengkung -->
+        </shape>
+    </item>
+    <item>
+        <!-- Warna default tombol -->
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#FFFFFF"
+                android:endColor="#FFFFFF" /> <!-- Gradien oranye ke merah -->
+            <corners android:radius="5dp" /> <!-- Sudut melengkung -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/utama" /> <!-- Garis pinggir -->
+        </shape>
+    </item>
+</selector>
